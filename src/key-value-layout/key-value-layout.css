@@ -1,0 +1,22 @@
+:root {
+    --key-value-layout-padding: 5px;
+    --key-value-layout-max-key-width: 50%;
+    --key-value-layout-vertical-alignment: center;
+}
+
+.key-value-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: var(--key-value-layout-padding);
+    justify-content: space-between;
+}
+
+.key-value-layout>*:first-child {
+    flex: 1 0 auto;
+}
+
+.key-value-layout>* {
+    align-self: var(--key-value-layout-vertical-alignment);
+    max-width: var(--key-value-layout-max-key-width);
+}

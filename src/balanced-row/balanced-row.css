@@ -1,0 +1,9 @@
+.balanced-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.balanced-row>div {
+    flex: 1 0 0;
+}
