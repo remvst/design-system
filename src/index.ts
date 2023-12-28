@@ -7,5 +7,6 @@ export * from './dim/dim';
 export * from './focusable';
 export * from './gauge/gauge';
 export * from './key-value-layout/key-value-layout';
-export * from './screen-layout/screen-layout';
+export * from './screen-column-layout/screen-column-layout';
+export * from './screen-stack-layout/screen-stack-layout';
 export * from './stack-list/stack-list';

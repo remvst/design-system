@@ -1,27 +1,27 @@
 import React from 'react';
 import { createRoot, Root } from 'react-dom/client';
-import { Gauge, KeyValueLayout, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenLayout, ScreenTop, ScreenContent, ScreenBottom, ScreenLayoutV2, ScreenMainColumn, ScreenCentralContent, ScreenMainColumnHeader, ScreenMainColumnFooter, ScreenMainColumnContent } from '@remvst/design-system';
+import { Gauge, KeyValueLayout, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent } from '@remvst/design-system';
 
 const demos: React.ReactNode[] = [
     <>
         <h1>Buttons</h1>
 
         <div className='demo-frame'>
-            <ScreenLayout>
-                <ScreenTop>
+            <ScreenStackLayout>
+                <ScreenStackLayoutTop>
                     Top of the screen
-                </ScreenTop>
-                <ScreenContent>
+                </ScreenStackLayoutTop>
+                <ScreenStackLayoutContent>
                     <StackList>
                         <MainButton>Play</MainButton>
                         <MainButton>Quit</MainButton>
                         <MainButton>Nope</MainButton>
                     </StackList>
-                </ScreenContent>
-                <ScreenBottom>
+                </ScreenStackLayoutContent>
+                <ScreenStackLayoutBottom>
                     Bottom of the screen
-                </ScreenBottom>
-            </ScreenLayout>
+                </ScreenStackLayoutBottom>
+            </ScreenStackLayout>
         </div>
     </>,
 
@@ -29,30 +29,30 @@ const demos: React.ReactNode[] = [
         <h1>Buttons</h1>
 
         <div className='demo-frame' style={{height: '400px'}}>
-            <ScreenLayoutV2>
-                <ScreenMainColumn>
-                    <ScreenMainColumnHeader>
+            <ScreenColumnLayout>
+                <ScreenColumnLayoutMainColumn>
+                    <ScreenColumnLayoutMainColumnHeader>
                         Main Column Header
-                    </ScreenMainColumnHeader>
+                    </ScreenColumnLayoutMainColumnHeader>
 
-                    <ScreenMainColumnContent>
+                    <ScreenColumnLayoutMainColumnContent>
                         <StackList>
                             <MainButton>Play</MainButton>
                             <MainButton>Quit</MainButton>
                             <MainButton>Nope</MainButton>
                         </StackList>
 
-                    </ScreenMainColumnContent>
+                    </ScreenColumnLayoutMainColumnContent>
 
-                    <ScreenMainColumnFooter>
+                    <ScreenColumnLayoutMainColumnFooter>
                         Main Column Footer
-                    </ScreenMainColumnFooter>
-                </ScreenMainColumn>
+                    </ScreenColumnLayoutMainColumnFooter>
+                </ScreenColumnLayoutMainColumn>
 
-                <ScreenCentralContent>
+                <ScreenColumnLayoutCentralContent>
                     Central content
-                </ScreenCentralContent>
-            </ScreenLayoutV2>
+                </ScreenColumnLayoutCentralContent>
+            </ScreenColumnLayout>
         </div>
     </>,
 

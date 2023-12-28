@@ -1,0 +1,57 @@
+.screen-layout-column {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.screen-layout-column>* {
+    height: 100%;
+}
+
+.screen-layout-column>.screen-layout-column-main-column {
+    flex: 0 0 45%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+
+.screen-layout-column>.screen-layout-column-main-column * {
+    backdrop-filter: none;
+}
+
+.screen-layout-column>.screen-layout-column-main-column .key-value-layout {
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.screen-layout-column>.screen-layout-column-main-column>.screen-layout-column-main-column-header {
+    flex-basis: 40%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.screen-layout-column>.screen-layout-column-main-column>.screen-layout-column-main-column-footer {
+    flex-basis: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.screen-layout-column>.screen-layout-column-main-column>.screen-layout-column-main-column-content {
+    flex: 1 0 0;
+    overflow: hidden auto;
+}
+
+.screen-layout-column>.screen-layout-column-central-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}

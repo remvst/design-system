@@ -1,0 +1,28 @@
+.screen-stack-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: auto;
+    height: 100%;
+    animation: animate-in 0.2s ease-out;
+}
+
+.screen-stack-layout-top, .screen-stack-layout-bottom {
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.screen-stack-layout-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.screen-stack-layout-content>* {
+    flex: 1 1 auto;
+    max-height: 100%;
+}
