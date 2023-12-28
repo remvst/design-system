@@ -5,7 +5,8 @@
     "private": true,
     "main": "lib/index.js",
     "scripts": {
-        "build": "rm -rf lib && tsc",
+        "copy-files": "copyfiles -u 1 src/**/*.css lib/",
+        "build": "rm -rf lib && tsc && npm run copy-files",
         "prepublishOnly": "npm i && npm run build"
     },
     "keywords": [],
@@ -15,5 +16,9 @@
         "@types/react": "^18.2.45",
         "react": "^18.2.0",
         "typescript": "^5.2.2"
+    },
+    "devDependencies": {
+        "copyfiles": "^2.4.1",
+        "rimraf": "^5.0.5"
     }
 }
