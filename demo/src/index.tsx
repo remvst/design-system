@@ -1,8 +1,16 @@
 import React from 'react';
 import { createRoot, Root } from 'react-dom/client';
-import { Gauge, KeyValueLayout, BalancedRow, BalancedStack } from '@remvst/design-system';
+import { Gauge, KeyValueLayout, BalancedRow, BalancedStack, MainButton } from '@remvst/design-system';
 
 const demos: React.ReactNode[] = [
+    <>
+        <h1>Buttons</h1>
+
+        <div className='demo-frame' style={{padding: '10px'}}>
+            <MainButton>Main Button</MainButton>
+        </div>
+    </>,
+
     <>
         <h1>Gauges</h1>
 
