@@ -20,12 +20,6 @@
     backdrop-filter: none;
 }
 
-.screen-layout-column>.screen-layout-column-main-column .key-value-layout {
-    padding: 5px;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 .screen-layout-column>.screen-layout-column-main-column>.screen-layout-column-main-column-header {
     flex-basis: 40%;
     flex-shrink: 0;

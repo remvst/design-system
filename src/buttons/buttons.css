@@ -1,12 +1,8 @@
 :root {
     --button-font-family: Arial;
-    --button-background: rgba(255, 255, 255, 0.2);
-    --button-background-focused: rgba(255, 255, 255, 0.5);
     --button-color: #fff;
 
     --main-button-font-size: 20px;
-    --main-button-margin: 5px;
-    --main-button-padding: 5px 10%;
 }
 
 .main-button {
@@ -15,17 +11,8 @@
 
     color: var(--button-color);
     font-family: var(--button-font-family);
-    background: var(--button-background);
-
-    padding: var(--main-button-padding);
-    margin: var(--main-button-margin);
 
     font-size: var(--main-button-font-size);
-}
-
-.main-button:focus {
-    background-color: rgba(255, 255, 255, 0.5);
-    outline: none;
 }
 
 .main-button.disabled {

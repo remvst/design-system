@@ -5,22 +5,18 @@
 
 .label-giant {
     font-size: 100px;
-    text-shadow: 0px 5px 0px black;
 }
 
 .label-large {
     font-size: 25px;
-    text-shadow: 0px 5px 0px black;
 }
 
 .label-small {
     font-size: 15px;
-    text-shadow: 0px 3px 0px black;
 }
 
 .label-tiny {
     font-size: 10px;
-    text-shadow: 0px 2px 0px black;
 }
 
 .main-title {
