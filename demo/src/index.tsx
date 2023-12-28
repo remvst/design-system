@@ -1,56 +1,64 @@
 import React from 'react';
 import { createRoot, Root } from 'react-dom/client';
-import { Gauge, KeyValueLayout, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent } from '@remvst/design-system';
+import { AlignRight, Gauge, KeyValueLayout, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent, MainTitle, TextBlock, ScrollableContent } from '@remvst/design-system';
 
 const demos: React.ReactNode[] = [
     <>
-        <h1>Buttons</h1>
+        <h1>Screen Stack Layout</h1>
 
         <div className='demo-frame'>
             <ScreenStackLayout>
                 <ScreenStackLayoutTop>
-                    Top of the screen
+                    <MainTitle>Main Title</MainTitle>
                 </ScreenStackLayoutTop>
                 <ScreenStackLayoutContent>
                     <StackList>
                         <MainButton>Play</MainButton>
-                        <MainButton>Quit</MainButton>
-                        <MainButton>Nope</MainButton>
+                        <MainButton>Settings</MainButton>
+                        <MainButton>Select Level</MainButton>
                     </StackList>
                 </ScreenStackLayoutContent>
                 <ScreenStackLayoutBottom>
-                    Bottom of the screen
+                    <AlignRight>
+                        <MainButton>Quit</MainButton>
+                        <MainButton>Nope</MainButton>
+                    </AlignRight>
                 </ScreenStackLayoutBottom>
             </ScreenStackLayout>
         </div>
     </>,
 
     <>
-        <h1>Buttons</h1>
+        <h1>Screen Column Layout</h1>
 
         <div className='demo-frame' style={{height: '400px'}}>
             <ScreenColumnLayout>
                 <ScreenColumnLayoutMainColumn>
                     <ScreenColumnLayoutMainColumnHeader>
-                        Main Column Header
+                        <MainTitle>Header</MainTitle>
                     </ScreenColumnLayoutMainColumnHeader>
 
                     <ScreenColumnLayoutMainColumnContent>
                         <StackList>
                             <MainButton>Play</MainButton>
-                            <MainButton>Quit</MainButton>
-                            <MainButton>Nope</MainButton>
+                            <MainButton>Settings</MainButton>
+                            <MainButton>Select Level</MainButton>
                         </StackList>
 
                     </ScreenColumnLayoutMainColumnContent>
 
                     <ScreenColumnLayoutMainColumnFooter>
-                        Main Column Footer
+                        <StackList>
+                            <MainButton>Quit</MainButton>
+                            <MainButton>Nope</MainButton>
+                        </StackList>
                     </ScreenColumnLayoutMainColumnFooter>
                 </ScreenColumnLayoutMainColumn>
 
                 <ScreenColumnLayoutCentralContent>
-                    Central content
+                    <ScrollableContent>
+                        <TextBlock>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum mauris urna, sed fermentum ante aliquet sed. Donec non urna feugiat, dignissim sapien ut, ultricies metus. Ut eu nisi id mauris venenatis blandit. Donec auctor tortor euismod fermentum dictum. Etiam vel ante arcu. Vivamus maximus condimentum malesuada. Sed interdum at dui a malesuada. Aenean tempor mi fermentum condimentum imperdiet. Pellentesque at lacus aliquam, porta purus sit amet, congue nisi. Nam a nisi non nibh accumsan luctus sed nec purus. Aenean feugiat odio vitae enim euismod, nec porta felis rhoncus. Quisque eget feugiat mi. Sed ullamcorper purus velit, at dapibus nisi commodo id. Aliquam at blandit odio, eu pulvinar lacus. Mauris quis porttitor augue, eu sodales velit. Nunc placerat justo id eros pretium, et lobortis metus placerat. </TextBlock>
+                    </ScrollableContent>
                 </ScreenColumnLayoutCentralContent>
             </ScreenColumnLayout>
         </div>
