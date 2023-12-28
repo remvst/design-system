@@ -3,7 +3,6 @@
     flex-direction: column;
     margin: auto;
     height: 100%;
-    animation: animate-in 0.2s ease-out;
 }
 
 .screen-stack-layout-top, .screen-stack-layout-bottom {

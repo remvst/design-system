@@ -1,34 +1,24 @@
-:root {
-    --gauge-label-color: #000;
-    --gauge-label-font-size: 15px;
-    --gauge-label-font-family: Arial;
-
-    --gauge-track-color: #444;
-    --gauge-fill-color: #fff;
-    --gauge-height: 20px;
-}
-
 .gauge {
     width: 100%;
-    height: var(--gauge-height);
-    background-color: var(--gauge-track-color);
+    height: 20px;
+    background-color: #444;
     overflow: hidden;
 }
 
 .gauge>div {
     height: 100%;
-    background-color: var(--gauge-fill-color);
+    background-color: #fff;
     transition: width 100ms linear;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: end;
+    padding: var(--spacing-xxs);
 }
 
 .gauge>div>* {
-    font-family: var(--gauge-label-font-family);
-    color: var(--gauge-label-color);
-    font-size: var(--gauge-label-font-size);
+    color: black;
+    font-size: 15px;
     flex: 0 0 auto;
     align-self: center;
 }

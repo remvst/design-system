@@ -1,18 +1,8 @@
-:root {
-    --button-font-family: Arial;
-    --button-color: #fff;
-
-    --main-button-font-size: 20px;
-}
-
 .main-button {
     text-align: center;
     cursor: pointer;
-
-    color: var(--button-color);
-    font-family: var(--button-font-family);
-
-    font-size: var(--main-button-font-size);
+    color: white;
+    font-size: 20px;
 }
 
 .main-button.disabled {

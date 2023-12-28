@@ -1,12 +1,12 @@
 import React from 'react';
-import { createRoot, Root } from 'react-dom/client';
-import { FlowList, Frame, VerticalCenter, SmallLabel, AlignRight, Gauge, KeyValueLayout, LabelledSlider, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent, MainTitle, TextBlock, ScrollableContent } from '@remvst/design-system';
+import { createRoot } from 'react-dom/client';
+import { Spacing, FlowList, Frame, VerticalCenter, SmallLabel, AlignRight, Gauge, KeyValueLayout, LabelledSlider, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent, MainTitle, TextBlock, ScrollableContent } from '@remvst/design-system';
 
 const demos: React.ReactNode[] = [
     <>
         <h1>Screen Stack Layout</h1>
 
-        <div className='demo-frame'>
+        <div className='demo-frame' style={{height: '400px'}}>
             <ScreenStackLayout>
                 <ScreenStackLayoutTop>
                     <MainTitle>Main Title</MainTitle>
@@ -72,7 +72,7 @@ const demos: React.ReactNode[] = [
     </>,
 
     <>
-        <h1>Screen Column Layout</h1>
+        <h1>Settings</h1>
 
         <div className='demo-frame' style={{height: '400px'}}>
             <ScreenColumnLayout>
@@ -113,7 +113,7 @@ const demos: React.ReactNode[] = [
 
     <>
         <h1>Dialog</h1>
-        <div className='demo-frame'>
+        <div className='demo-frame' style={{height: '400px'}}>
             <Dim>
                 <ScreenStackLayout>
                     <VerticalCenter>
@@ -135,7 +135,7 @@ const demos: React.ReactNode[] = [
     <>
         <h1>Gauges</h1>
 
-        <div className='demo-frame' style={{padding: '10px'}}>
+        <div className='demo-frame' style={{padding: Spacing.s}}>
             <div style={{margin: '10px'}}>
                 <Gauge value={0} label="0%" />
             </div>
@@ -161,7 +161,7 @@ const demos: React.ReactNode[] = [
     <>
         <h1>Key/value layout</h1>
 
-        <div className='demo-frame' style={{padding: '10px'}}>
+        <div className='demo-frame' style={{padding: Spacing.s}}>
             <KeyValueLayout>
                 <div>Key</div>
                 <div>Value</div>
@@ -182,7 +182,7 @@ const demos: React.ReactNode[] = [
     <>
         <h1>Balanced Row</h1>
 
-        <div className='demo-frame' style={{padding: '10px'}}>
+        <div className='demo-frame' style={{padding: Spacing.s}}>
             <BalancedRow>
                 <div>Small column</div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum mauris urna, sed fermentum ante aliquet sed. </div>
@@ -194,7 +194,7 @@ const demos: React.ReactNode[] = [
     <>
         <h1>Balanced Stack</h1>
 
-        <div className='demo-frame' style={{padding: '10px', height: '400px'}}>
+        <div className='demo-frame' style={{padding: Spacing.s, height: '400px'}}>
             <BalancedStack>
                 <div>Small column</div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum mauris urna, sed fermentum ante aliquet sed. Donec non urna feugiat, dignissim sapien ut, ultricies metus. Ut eu nisi id mauris venenatis blandit. Donec auctor tortor euismod fermentum dictum. Etiam vel ante arcu. Vivamus maximus condimentum malesuada. Sed interdum at dui a malesuada. Aenean tempor mi fermentum condimentum imperdiet. Pellentesque at lacus aliquam, porta purus sit amet, congue nisi. Nam a nisi non nibh accumsan luctus sed nec purus. Aenean feugiat odio vitae enim euismod, nec porta felis rhoncus. Quisque eget feugiat mi. Sed ullamcorper purus velit, at dapibus nisi commodo id. Aliquam at blandit odio, eu pulvinar lacus. Mauris quis porttitor augue, eu sodales velit. Nunc placerat justo id eros pretium, et lobortis metus placerat. </div>
