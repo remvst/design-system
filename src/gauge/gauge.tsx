@@ -1,5 +1,5 @@
-import React from "react";
 import "./gauge.css";
+import React from "react";
 
 interface Props {
     value: number;

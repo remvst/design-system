@@ -1,6 +1,6 @@
-import { TabLayout, Tab } from "@remvst/design-system";
-import React from "react";
+import { Tab, TabLayout } from "@remvst/design-system";
 import { StoryObj } from "@storybook/react";
+import React from "react";
 
 export default {
     title: "Molecules/TabLayout",

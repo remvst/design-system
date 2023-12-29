@@ -1,3 +1,6 @@
 {
-    "tabWidth": 4
+    "plugins": ["@trivago/prettier-plugin-sort-imports"],
+    "tabWidth": 4,
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
 }

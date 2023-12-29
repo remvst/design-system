@@ -1,5 +1,5 @@
-import React from "react";
 import "./balanced-stack.css";
+import React from "react";
 
 export class BalancedStack extends React.Component<
     React.HTMLAttributes<HTMLDivElement>

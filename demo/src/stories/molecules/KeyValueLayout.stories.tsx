@@ -1,6 +1,6 @@
 import { Frame, KeyValueLayout, SmallLabel } from "@remvst/design-system";
-import React from "react";
 import { StoryObj } from "@storybook/react";
+import React from "react";
 
 export default {
     title: "Molecules/KeyValueLayout",

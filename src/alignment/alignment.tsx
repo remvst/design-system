@@ -1,5 +1,5 @@
-import "./alignment.css";
 import { ComponentWithClassName } from "../component-with-class-name";
+import "./alignment.css";
 
 export class VerticalCenter extends ComponentWithClassName {
     protected readonly className = "vertical-center";
