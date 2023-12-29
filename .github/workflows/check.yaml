@@ -8,7 +8,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     concurrency:
-      group: deploy-web-${{ github.ref }}
+      group: check-${{ github.ref }}
       cancel-in-progress: true
     steps:
       - uses: actions/setup-node@v3
