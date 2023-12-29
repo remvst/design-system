@@ -34,13 +34,11 @@ export const MainMenu: StoryObj = {
         <MainTitle>Main Title</MainTitle>
       </ScreenStackLayoutTop>
       <ScreenStackLayoutContent>
-        <Frame>
-          <StackList>
-            <MainButton>Play</MainButton>
-            <MainButton>Settings</MainButton>
-            <MainButton>Select Level</MainButton>
-          </StackList>
-        </Frame>
+        <StackList>
+          <MainButton>Play</MainButton>
+          <MainButton>Settings</MainButton>
+          <MainButton>Select Level</MainButton>
+        </StackList>
       </ScreenStackLayoutContent>
       <ScreenStackLayoutBottom>
         <AlignRight>

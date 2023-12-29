@@ -11,30 +11,6 @@ const preview: Preview = {
                   height: 100%;
                   background: lightgray;
               }
-
-              body {
-                  font-family: Arial;
-              }
-
-              .main-button {
-                  padding: var(--spacing-xs);
-                  text-transform: uppercase;
-                  font-weight: bold;
-
-                  background: rgba(255, 255, 255, 0.1);
-              }
-
-              .stack-list>div, .flow-list>div {
-                  padding: var(--spacing-xxs);
-              }
-
-              .stack-list, .flow-list {
-                  padding: var(--spacing-xxs);
-              }
-
-              .screen-stack-layout {
-                  padding: var(--spacing-xxl);
-              }
             `}
         </style>
         <Story />
