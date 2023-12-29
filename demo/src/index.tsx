@@ -195,28 +195,6 @@ const demos = new Map<string, React.ReactNode>([
             </KeyValueLayout>
         </>
     ],
-
-    [
-        'Balanced Row',
-        <>
-            <BalancedRow>
-                <div>Small column</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum mauris urna, sed fermentum ante aliquet sed. </div>
-                <div>Small column</div>
-            </BalancedRow>
-        </>
-    ],
-
-    [
-        'Balanced stack',
-        <>
-            <BalancedStack>
-                <div>Small column</div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum mauris urna, sed fermentum ante aliquet sed. Donec non urna feugiat, dignissim sapien ut, ultricies metus. Ut eu nisi id mauris venenatis blandit. Donec auctor tortor euismod fermentum dictum. Etiam vel ante arcu. Vivamus maximus condimentum malesuada. Sed interdum at dui a malesuada. Aenean tempor mi fermentum condimentum imperdiet. Pellentesque at lacus aliquam, porta purus sit amet, congue nisi. Nam a nisi non nibh accumsan luctus sed nec purus. Aenean feugiat odio vitae enim euismod, nec porta felis rhoncus. Quisque eget feugiat mi. Sed ullamcorper purus velit, at dapibus nisi commodo id. Aliquam at blandit odio, eu pulvinar lacus. Mauris quis porttitor augue, eu sodales velit. Nunc placerat justo id eros pretium, et lobortis metus placerat. </div>
-                <div>Small column</div>
-            </BalancedStack>
-        </>
-    ],
 ]);
 
 function RootComponent() {
