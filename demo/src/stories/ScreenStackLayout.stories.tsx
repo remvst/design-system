@@ -6,6 +6,7 @@ import {
   AlignRight,
   Gauge,
   MainButton,
+  HorizontalCenter,
   Dim,
   StackList,
   ScreenStackLayout,
@@ -13,6 +14,7 @@ import {
   ScreenStackLayoutContent,
   ScreenStackLayoutBottom,
   MainTitle,
+  Spacing,
 } from "@remvst/design-system";
 import React from "react";
 import { StoryObj } from "@storybook/react";
@@ -92,4 +94,28 @@ export const ConfirmationDialog: StoryObj = {
       </ScreenStackLayout>
     </Dim>
   ),
+};
+
+export const PromptDialog: StoryObj = {
+    render: () => (
+        <Dim>
+            <ScreenStackLayout>
+                <VerticalCenter>
+                    <Frame style={{width: '60%', margin: 'auto', padding: Spacing.s}}>
+                        <MainTitle style={{'textAlign': 'center'}}>Enter Your Name</MainTitle>
+                        <SmallLabel style={{'textAlign': 'center'}}>We need it for reasons</SmallLabel>
+
+                        <HorizontalCenter>
+                            <input type="text" />
+                        </HorizontalCenter>
+
+                        <FlowList>
+                            <MainButton style={{'textAlign': 'center'}}>Submit</MainButton>
+                            <MainButton style={{'textAlign': 'center'}}>Cancel</MainButton>
+                        </FlowList>
+                    </Frame>
+                </VerticalCenter>
+            </ScreenStackLayout>
+        </Dim>
+    ),
 };
