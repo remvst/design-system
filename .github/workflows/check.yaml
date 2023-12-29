@@ -1,0 +1,24 @@
+name: Check
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-web-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm i
+      - name: Check format
+        run:
+      - name: Test
+        run: npm test

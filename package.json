@@ -5,10 +5,12 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "prettier": "prettier . --write",
+    "prettier:fix": "prettier . --write",
+    "prettier:check": "prettier . --check",
     "copy-files": "copyfiles -u 1 src/**/*.css lib/",
     "build": "rm -rf lib && tsc && npm run copy-files",
-    "prepublishOnly": "npm i && npm run build"
+    "prepublishOnly": "npm i && npm run build",
+    "test": "npm run prettier:check && npm run build"
   },
   "keywords": [],
   "author": "Rémi Vansteelandt",
