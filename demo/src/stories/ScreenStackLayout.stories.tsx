@@ -38,6 +38,25 @@ export const MainMenu: StoryObj = {
     ),
 };
 
+export const LoadingScreen: StoryObj = {
+    render: () => (
+        <ScreenStackLayout>
+            <ScreenStackLayoutTop>
+            </ScreenStackLayoutTop>
+
+            <ScreenStackLayoutContent>
+                <VerticalCenter>
+                    <Gauge value={0.5} label="50%" />
+                </VerticalCenter>
+            </ScreenStackLayoutContent>
+
+            <ScreenStackLayoutBottom>
+                <SmallLabel style={{textAlign: 'center'}}>Things are loading...</SmallLabel>
+            </ScreenStackLayoutBottom>
+        </ScreenStackLayout>
+    ),
+};
+
 export const ConfirmationDialog: StoryObj = {
     render: () => (
         <Dim>

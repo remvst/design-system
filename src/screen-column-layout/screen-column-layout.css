@@ -67,7 +67,7 @@
 }
 
 .mobile .screen-layout-column>.screen-layout-column-main-column>.screen-layout-column-main-column-header {
-    flex-basis: 40%;
+    flex-basis: 30%;
     flex-shrink: 1;
     justify-content: end;
     padding-left: 20px;
