@@ -1,6 +1,6 @@
 import { BalancedRow, StackList, MainButton, Frame } from '@remvst/design-system';
 import React from 'react';
-import './screen-layout-preview.css';
+import '../screen-layout-preview.css';
 import { StoryObj } from '@storybook/react';
 
 export default {

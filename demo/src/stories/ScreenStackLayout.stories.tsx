@@ -1,6 +1,6 @@
-import { Spacing, FlowList, Frame, VerticalCenter, SmallLabel, AlignRight, Gauge, KeyValueLayout, LabelledSlider, BalancedRow, BalancedStack, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent, MainTitle, TextBlock, ScrollableContent } from '@remvst/design-system';
+import { FlowList, Frame, VerticalCenter, SmallLabel, AlignRight, Gauge, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, MainTitle } from '@remvst/design-system';
 import React from 'react';
-import './screen-layout-preview.css';
+import '../screen-layout-preview.css';
 import { StoryObj } from '@storybook/react';
 
 export default {
