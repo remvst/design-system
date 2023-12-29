@@ -5,6 +5,7 @@
     "private": true,
     "main": "lib/index.js",
     "scripts": {
+        "prettier": "prettier . --write",
         "copy-files": "copyfiles -u 1 src/**/*.css lib/",
         "build": "rm -rf lib && tsc && npm run copy-files",
         "prepublishOnly": "npm i && npm run build"
@@ -19,6 +20,7 @@
     },
     "devDependencies": {
         "copyfiles": "^2.4.1",
+        "prettier": "3.1.1",
         "rimraf": "^5.0.5"
     }
 }

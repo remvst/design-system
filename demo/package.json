@@ -4,7 +4,7 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "webpack serve --open --config webpack.js",
+        "prettier": "npm prettier . --write",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
