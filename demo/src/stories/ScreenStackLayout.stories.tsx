@@ -56,7 +56,7 @@ export const MainMenu: StoryObj = {
 
 export const LoadingScreen: StoryObj = {
   render: () => (
-    <ScreenStackLayout style={{backgroundColor: '#000'}}>
+    <ScreenStackLayout style={{ backgroundColor: "#000" }}>
       <ScreenStackLayoutTop></ScreenStackLayoutTop>
 
       <ScreenStackLayoutContent>
@@ -97,25 +97,29 @@ export const ConfirmationDialog: StoryObj = {
 };
 
 export const PromptDialog: StoryObj = {
-    render: () => (
-        <Dim>
-            <ScreenStackLayout>
-                <VerticalCenter>
-                    <Frame style={{width: '60%', margin: 'auto', padding: Spacing.s}}>
-                        <MainTitle style={{'textAlign': 'center'}}>Enter Your Name</MainTitle>
-                        <SmallLabel style={{'textAlign': 'center'}}>We need it for reasons</SmallLabel>
+  render: () => (
+    <Dim>
+      <ScreenStackLayout>
+        <VerticalCenter>
+          <Frame style={{ width: "60%", margin: "auto", padding: Spacing.s }}>
+            <MainTitle style={{ textAlign: "center" }}>
+              Enter Your Name
+            </MainTitle>
+            <SmallLabel style={{ textAlign: "center" }}>
+              We need it for reasons
+            </SmallLabel>
 
-                        <HorizontalCenter>
-                            <input type="text" />
-                        </HorizontalCenter>
+            <HorizontalCenter>
+              <input type="text" />
+            </HorizontalCenter>
 
-                        <FlowList>
-                            <MainButton style={{'textAlign': 'center'}}>Submit</MainButton>
-                            <MainButton style={{'textAlign': 'center'}}>Cancel</MainButton>
-                        </FlowList>
-                    </Frame>
-                </VerticalCenter>
-            </ScreenStackLayout>
-        </Dim>
-    ),
+            <FlowList>
+              <MainButton style={{ textAlign: "center" }}>Submit</MainButton>
+              <MainButton style={{ textAlign: "center" }}>Cancel</MainButton>
+            </FlowList>
+          </Frame>
+        </VerticalCenter>
+      </ScreenStackLayout>
+    </Dim>
+  ),
 };
