@@ -1,3 +1,5 @@
+import "./spacing.css";
+
 export class Spacing {
   static readonly xxl = "var(--spacing-xxl)";
   static readonly xl = "var(--spacing-xl)";

@@ -1,5 +1,4 @@
 import "./reset/reset.css";
-import "./spacing/spacing.css";
 
 export * from "./animations/animations";
 export * from "./alignment/alignment";
@@ -20,3 +19,4 @@ export * from "./slider/slider";
 export * from "./spacing/spacing";
 export * from "./stack-list/stack-list";
 export * from "./tabs/tabs";
+export * from "./typography/typography";
