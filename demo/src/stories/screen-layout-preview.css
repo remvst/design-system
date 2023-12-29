@@ -1,0 +1,29 @@
+html, body, #storybook-root {
+    height: 100%;
+    background: lightgray;
+}
+
+body {
+    font-family: Arial;
+    margin: 20px;
+}
+
+.main-button {
+    padding: var(--spacing-xs);
+    text-transform: uppercase;
+    font-weight: bold;
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stack-list>div, .flow-list>div {
+    padding: var(--spacing-xxs);
+}
+
+.stack-list, .flow-list {
+    padding: var(--spacing-xxs);
+}
+
+.screen-stack-layout {
+    padding: var(--spacing-xxl);
+}
