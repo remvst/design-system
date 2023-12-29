@@ -1,5 +1,5 @@
-import "./balanced-row.css";
 import React from "react";
+import "./balanced-row.css";
 
 export class BalancedRow extends React.Component<
     React.HTMLAttributes<HTMLDivElement>

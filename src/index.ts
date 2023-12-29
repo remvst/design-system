@@ -1,7 +1,7 @@
 import "./reset/reset.css";
 
-export * from "./animations/animations";
 export * from "./alignment/alignment";
+export * from "./animations/animations";
 export * from "./balanced-row/balanced-row";
 export * from "./balanced-stack/balanced-stack";
 export * from "./buttons/buttons";

@@ -1,5 +1,5 @@
-import "./animations.css";
 import { CSSProperties } from "react";
+import "./animations.css";
 
 export class AnimateInSequence {
     delay = 0;

@@ -20,9 +20,9 @@
         "typescript": "^5.2.2"
     },
     "devDependencies": {
-        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
         "copyfiles": "^2.4.1",
         "prettier": "3.1.1",
+        "prettier-plugin-organize-imports": "^3.2.4",
         "rimraf": "^5.0.5"
     }
 }

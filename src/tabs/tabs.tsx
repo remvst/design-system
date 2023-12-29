@@ -1,6 +1,6 @@
+import React from "react";
 import { Focusable } from "../focusable";
 import "./tabs.css";
-import React from "react";
 
 export class TabLayout extends React.Component<
     React.HTMLAttributes<HTMLDivElement>

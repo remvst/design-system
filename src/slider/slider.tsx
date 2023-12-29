@@ -1,6 +1,6 @@
+import React from "react";
 import { TinyLabel } from "../labels/labels";
 import "./slider.css";
-import React from "react";
 
 export default class Slider extends React.Component<
     React.InputHTMLAttributes<HTMLInputElement>,

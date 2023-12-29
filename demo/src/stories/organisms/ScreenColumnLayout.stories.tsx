@@ -1,4 +1,3 @@
-import { MobileTestComponent } from "../../mobile-test-component";
 import {
     Frame,
     KeyValueLayout,
@@ -18,6 +17,7 @@ import {
 } from "@remvst/design-system";
 import { StoryObj } from "@storybook/react";
 import React from "react";
+import { MobileTestComponent } from "../../mobile-test-component";
 
 export default {
     title: "Organisms/ScreenColumnLayout",
