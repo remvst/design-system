@@ -8,24 +8,24 @@
 }
 
 .label-large {
-  font-size: 25px;
+  font-size: var(--font-size-l);
 }
 
 .label-small {
-  font-size: 15px;
+  font-size: var(--font-size-s);
 }
 
 .label-tiny {
-  font-size: 10px;
+  font-size: var(--font-size-xs);
 }
 
 .main-title {
   text-align: center;
-  font-size: 30px;
+  font-size: var(--font-size-xxl);
 }
 
 .text-block {
-  font-size: 14px;
+  font-size: var(--font-size-m);
   color: white;
   padding: 10px 10%;
 }
