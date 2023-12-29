@@ -17,8 +17,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm i
-      - name: Check format
-        run:
+        run: npm install
       - name: Test
         run: npm test
