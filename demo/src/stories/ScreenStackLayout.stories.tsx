@@ -56,7 +56,7 @@ export const MainMenu: StoryObj = {
 
 export const LoadingScreen: StoryObj = {
   render: () => (
-    <ScreenStackLayout>
+    <ScreenStackLayout style={{backgroundColor: '#000'}}>
       <ScreenStackLayoutTop></ScreenStackLayoutTop>
 
       <ScreenStackLayoutContent>
