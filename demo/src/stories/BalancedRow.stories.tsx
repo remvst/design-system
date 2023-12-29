@@ -8,7 +8,7 @@ import React from "react";
 import { StoryObj } from "@storybook/react";
 
 export default {
-  title: "Utils/BalancedRow",
+  title: "Molecules/BalancedRow",
   component: BalancedRow,
 };
 

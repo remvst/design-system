@@ -20,7 +20,7 @@ import { StoryObj } from "@storybook/react";
 import { MobileTestComponent } from "../mobile-test-component";
 
 export default {
-  title: "Layouts/ScreenColumnLayout",
+  title: "Organisms/ScreenColumnLayout",
   component: ScreenColumnLayout,
   parameters: {
     layout: "fullscreen",

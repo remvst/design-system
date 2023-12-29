@@ -20,7 +20,7 @@ import React from "react";
 import { StoryObj } from "@storybook/react";
 
 export default {
-  title: "Layouts/ScreenStackLayout",
+  title: "Organisms/ScreenStackLayout",
   component: ScreenStackLayout,
   parameters: {
     layout: "fullscreen",

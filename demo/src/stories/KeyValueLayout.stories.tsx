@@ -3,7 +3,7 @@ import React from "react";
 import { StoryObj } from "@storybook/react";
 
 export default {
-  title: "Utils/KeyValueLayout",
+  title: "Molecules/KeyValueLayout",
   component: KeyValueLayout,
 };
 

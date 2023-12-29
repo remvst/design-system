@@ -3,7 +3,7 @@ import React from "react";
 import { StoryObj } from "@storybook/react";
 
 export default {
-  title: "Utils/Gauge",
+  title: "Molecules/Gauge",
   component: Gauge,
 };
 
