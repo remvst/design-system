@@ -9,6 +9,10 @@ export class LargeLabel extends ComponentWithClassName {
   readonly className = "label label-large";
 }
 
+export class MediumLabel extends ComponentWithClassName {
+  readonly className = "label label-medium";
+}
+
 export class SmallLabel extends ComponentWithClassName {
   readonly className = "label label-small";
 }

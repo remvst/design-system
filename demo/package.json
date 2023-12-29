@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "prettier": "npm prettier . --write",
-    "storybook": "storybook dev -p 8080",
-    "build-storybook": "storybook build"
+    "start": "storybook dev -p 8080"
   },
   "keywords": [],
   "author": "Rémi Vansteelandt",

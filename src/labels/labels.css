@@ -6,6 +6,10 @@
   font-size: var(--font-size-l);
 }
 
+.label-medium {
+  font-size: var(--font-size-m);
+}
+
 .label-small {
   font-size: var(--font-size-s);
 }

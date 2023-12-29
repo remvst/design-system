@@ -1,4 +1,9 @@
-import { SmallLabel, LargeLabel, TinyLabel } from "@remvst/design-system";
+import {
+  SmallLabel,
+  LargeLabel,
+  TinyLabel,
+  MediumLabel,
+} from "@remvst/design-system";
 import React from "react";
 import { StoryObj } from "@storybook/react";
 
@@ -18,6 +23,11 @@ export const Tiny: StoryObj<Args> = {
 export const Small: StoryObj<Args> = {
   args: { label: "Small label" },
   render: (args) => <SmallLabel>{args.label}</SmallLabel>,
+};
+
+export const Medium: StoryObj<Args> = {
+  args: { label: "Medium label" },
+  render: (args) => <MediumLabel>{args.label}</MediumLabel>,
 };
 
 export const Large: StoryObj<Args> = {
