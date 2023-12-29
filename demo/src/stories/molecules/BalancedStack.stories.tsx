@@ -3,16 +3,16 @@ import React from "react";
 import { StoryObj } from "@storybook/react";
 
 export default {
-  title: "Molecules/BalancedStack",
-  component: BalancedStack,
+    title: "Molecules/BalancedStack",
+    component: BalancedStack,
 };
 
 export const Simple: StoryObj = {
-  render: () => (
-    <BalancedStack>
-      <div>Item #1</div>
-      <div>Item #2</div>
-      <div>Item #3</div>
-    </BalancedStack>
-  ),
+    render: () => (
+        <BalancedStack>
+            <div>Item #1</div>
+            <div>Item #2</div>
+            <div>Item #3</div>
+        </BalancedStack>
+    ),
 };

@@ -1,39 +1,39 @@
 .label-giant {
-  font-size: 100px;
+    font-size: 100px;
 }
 
 .label-large {
-  font-size: var(--font-size-l);
+    font-size: var(--font-size-l);
 }
 
 .label-medium {
-  font-size: var(--font-size-m);
+    font-size: var(--font-size-m);
 }
 
 .label-small {
-  font-size: var(--font-size-s);
+    font-size: var(--font-size-s);
 }
 
 .label-tiny {
-  font-size: var(--font-size-xs);
+    font-size: var(--font-size-xs);
 }
 
 .main-title {
-  text-align: center;
-  font-size: var(--font-size-xxl);
+    text-align: center;
+    font-size: var(--font-size-xxl);
 }
 
 .text-block {
-  font-size: var(--font-size-m);
-  color: white;
-  padding: 10px 10%;
+    font-size: var(--font-size-m);
+    color: white;
+    padding: 10px 10%;
 }
 
 .text-block p {
-  margin: 10px 0px;
+    margin: 10px 0px;
 }
 
 .text-block ul {
-  margin-left: 20px;
-  list-style-type: square;
+    margin-left: 20px;
+    list-style-type: square;
 }

@@ -1,10 +1,10 @@
 .main-button {
-  text-align: center;
-  cursor: pointer;
-  font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .main-button.disabled {
-  color: #888;
-  pointer-events: none;
+    color: #888;
+    pointer-events: none;
 }

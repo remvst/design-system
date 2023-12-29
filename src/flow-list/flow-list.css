@@ -1,10 +1,10 @@
 .flow-list {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 .flow-list > div {
-  flex: 1 1 0;
-  position: relative;
+    flex: 1 1 0;
+    position: relative;
 }
