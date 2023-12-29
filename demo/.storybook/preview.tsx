@@ -1,12 +1,12 @@
-import { Preview } from '@storybook/react';
-import React from 'react';
+import { Preview } from "@storybook/react";
+import React from "react";
 
 const preview: Preview = {
   decorators: [
     (Story) => (
-        <div style={{height: '100%'}}>
-          <style>
-            {`
+      <div style={{ height: "100%" }}>
+        <style>
+          {`
               html, body, #storybook-root {
                   height: 100%;
                   background: lightgray;
@@ -36,9 +36,9 @@ const preview: Preview = {
                   padding: var(--spacing-xxl);
               }
             `}
-          </style>
-          <Story />
-        </div>
+        </style>
+        <Story />
+      </div>
     ),
   ],
 };

@@ -1,15 +1,15 @@
 .key-value-layout {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.key-value-layout>*:first-child {
-    flex: 1 0 auto;
+.key-value-layout > *:first-child {
+  flex: 1 0 auto;
 }
 
-.key-value-layout>* {
-    align-self: center;
-    max-width: 50%;
+.key-value-layout > * {
+  align-self: center;
+  max-width: 50%;
 }

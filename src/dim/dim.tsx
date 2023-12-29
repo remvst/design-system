@@ -1,6 +1,6 @@
 import { ComponentWithClassName } from "../component-with-class-name";
-import './dim.css';
+import "./dim.css";
 
 export class Dim extends ComponentWithClassName {
-    protected className = 'dim';
+  protected className = "dim";
 }

@@ -1,40 +1,40 @@
 .label {
-    color: white;
-    margin: 5px;
+  color: white;
+  margin: 5px;
 }
 
 .label-giant {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 .label-large {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .label-small {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .label-tiny {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .main-title {
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .text-block {
-    font-size: 14px;
-    color: white;
-    padding: 10px 10%;
+  font-size: 14px;
+  color: white;
+  padding: 10px 10%;
 }
 
 .text-block p {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 .text-block ul {
-    margin-left: 20px;
-    list-style-type: square;
+  margin-left: 20px;
+  list-style-type: square;
 }

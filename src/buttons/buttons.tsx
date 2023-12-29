@@ -1,6 +1,6 @@
-import './buttons.css';
+import "./buttons.css";
 import { Focusable } from "../focusable";
 
 export class MainButton extends Focusable {
-    protected readonly className = 'main-button';
+  protected readonly className = "main-button";
 }
