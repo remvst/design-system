@@ -17,7 +17,7 @@ import {
 } from "@remvst/design-system";
 import React from "react";
 import { StoryObj } from "@storybook/react";
-import { MobileTestComponent } from "../mobile-test-component";
+import { MobileTestComponent } from "../../mobile-test-component";
 
 export default {
   title: "Organisms/ScreenColumnLayout",
