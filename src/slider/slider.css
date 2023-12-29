@@ -44,21 +44,18 @@ input[type="range"]::-moz-range-track {
 }
 
 .labelled-slider {
-  /* display: flex; */
   background-color: white;
   padding: 1px;
   position: relative;
 }
 
 .labelled-slider > *:nth-child(1) {
-  /* flex: 1 0 auto; */
   width: 100%;
   height: 100%;
   display: block;
 }
 
 .labelled-slider > *:nth-child(2) {
-  /* flex: 0 1 auto; */
   min-width: 50px;
   text-align: right;
   position: absolute;

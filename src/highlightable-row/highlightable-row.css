@@ -1,0 +1,11 @@
+.highlightable-row {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.highlightable-row:focus {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.screen-layout-column > .screen-layout-column-main-column .highlightable-row {
+  background-color: transparent;
+}

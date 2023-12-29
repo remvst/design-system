@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "prettier": "npm prettier . --write",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 8080",
     "build-storybook": "storybook build"
   },
   "keywords": [],

@@ -10,6 +10,7 @@ export * from "./flow-list/flow-list";
 export * from "./focusable";
 export * from "./frame/frame";
 export * from "./gauge/gauge";
+export * from "./highlightable-row/highlightable-row";
 export * from "./key-value-layout/key-value-layout";
 export * from "./labels/labels";
 export * from "./screen-column-layout/screen-column-layout";

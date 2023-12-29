@@ -11,16 +11,16 @@ interface Args {
 }
 
 export const Tiny: StoryObj<Args> = {
-  args: { label: 'Tiny label' },
+  args: { label: "Tiny label" },
   render: (args) => <TinyLabel>{args.label}</TinyLabel>,
 };
 
 export const Small: StoryObj<Args> = {
-  args: { label: 'Small label' },
+  args: { label: "Small label" },
   render: (args) => <SmallLabel>{args.label}</SmallLabel>,
 };
 
 export const Large: StoryObj<Args> = {
-  args: { label: 'Large label' },
+  args: { label: "Large label" },
   render: (args) => <LargeLabel>{args.label}</LargeLabel>,
 };

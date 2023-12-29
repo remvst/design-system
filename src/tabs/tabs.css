@@ -9,8 +9,6 @@
 }
 
 .tab {
-  color: white;
-  text-align: center;
   border-bottom: 2px solid transparent;
   cursor: pointer;
   padding: 5px;
