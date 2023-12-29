@@ -19,3 +19,4 @@ export * from "./scrollable-content/scrollable-content";
 export * from "./slider/slider";
 export * from "./spacing/spacing";
 export * from "./stack-list/stack-list";
+export * from "./tabs/tabs";
