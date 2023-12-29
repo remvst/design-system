@@ -1,6 +1,5 @@
 import { Frame, SmallLabel, KeyValueLayout, LabelledSlider, MainButton, StackList, ScreenColumnLayout, ScreenColumnLayoutMainColumn, ScreenColumnLayoutCentralContent, ScreenColumnLayoutMainColumnHeader, ScreenColumnLayoutMainColumnFooter, ScreenColumnLayoutMainColumnContent, MainTitle, TextBlock, ScrollableContent } from '@remvst/design-system';
 import React from 'react';
-import '../screen-layout-preview.css';
 import { StoryObj } from '@storybook/react';
 import { MobileTestComponent } from '../mobile-test-component';
 

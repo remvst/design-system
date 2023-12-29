@@ -1,6 +1,5 @@
 import { FlowList, Frame, VerticalCenter, SmallLabel, AlignRight, Gauge, MainButton, Dim, StackList, ScreenStackLayout, ScreenStackLayoutTop, ScreenStackLayoutContent, ScreenStackLayoutBottom, MainTitle } from '@remvst/design-system';
 import React from 'react';
-import '../screen-layout-preview.css';
 import { StoryObj } from '@storybook/react';
 
 export default {
