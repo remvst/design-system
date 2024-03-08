@@ -11,7 +11,7 @@ export abstract class Focusable<
     private divElement: HTMLDivElement;
 
     private onMouseOver() {
-        this.divElement.focus();
+        this.divElement?.focus();
     }
 
     private keyUp(event: React.KeyboardEvent<HTMLDivElement>) {
@@ -20,7 +20,7 @@ export abstract class Focusable<
         }
 
         if (event.key === "Enter" || event.key === " ") {
-            this.divElement.click();
+            this.divElement?.click();
         }
     }
 
