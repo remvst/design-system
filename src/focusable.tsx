@@ -41,8 +41,12 @@ export abstract class Focusable<
                 onKeyUp={(e) => this.keyUp(e)}
                 ref={(div) => (this.divElement = div)}
             >
-                {props.children}
+                {this.renderChildren()}
             </div>
         );
+    }
+
+    protected renderChildren() {
+        return <>{this.props.children}</>;
     }
 }
