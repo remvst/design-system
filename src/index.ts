@@ -5,6 +5,7 @@ export * from "./animations/animations";
 export * from "./balanced-row/balanced-row";
 export * from "./balanced-stack/balanced-stack";
 export * from "./buttons/buttons";
+export * from "./dialog-layout/dialog-layout";
 export * from "./dim/dim";
 export * from "./flow-list/flow-list";
 export * from "./focusable";

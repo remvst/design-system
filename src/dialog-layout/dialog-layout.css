@@ -1,0 +1,76 @@
+.dialog-layout {
+    margin: var(--spacing-l);
+    background: #000;
+    overflow: hidden;
+    width: 90%;
+    max-width: 320px;
+
+    height: 100%;
+    max-height: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    color: white;
+}
+
+.dialog-layout.modal {
+    max-width: 800px;
+    flex: 1 0 auto;
+    max-height: 90%;
+}
+
+.dialog-layout.packed {
+    height: auto;
+}
+
+.dialog-layout-top-bar {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 15%;
+}
+
+.dialog-layout-bottom-bar {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 15%;
+}
+
+.dialog-layout-top-bar > * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-layout-top-bar-left {
+    flex: 0 0 20%;
+}
+
+.dialog-layout-top-bar-center {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.dialog-layout-top-bar-right {
+    flex: 0 0 20%;
+}
+
+.dialog-layout-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dialog-layout-bottom-bar .flow-list {
+    flex: 1 0 100%;
+    align-items: stretch;
+}
+
+.dialog-layout-bottom-bar .flow-list .main-button {
+    height: 100%;
+}
