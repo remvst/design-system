@@ -5,14 +5,14 @@ import {
     DialogTopBar,
     DialogTopBarCenter,
     DialogTopBarLeft,
-    Dim,
     FlowList,
     MainButton,
     MainTitle,
     SmallLabel,
+    TransitioningDim,
 } from "@remvst/design-system";
 import { StoryObj } from "@storybook/react";
-import React from "react";
+import React, { useRef } from "react";
 
 export default {
     title: "Organisms/DialogLayout",
@@ -22,81 +22,158 @@ export default {
     },
 };
 
-export const Dialog: StoryObj = {
-    render: () => (
-        <Dim>
-            <DialogLayout isPacked={true}>
-                <DialogTopBar>
-                    <DialogTopBarCenter>
-                        <MainTitle>Dialog Title</MainTitle>
-                    </DialogTopBarCenter>
-                </DialogTopBar>
+export const PackedDialog: StoryObj = {
+    render: () => {
+        const ref = useRef<TransitioningDim>(null);
 
-                <DialogContent>
-                    <SmallLabel>Some message</SmallLabel>
-                </DialogContent>
-
-                <DialogBottomBar>
-                    <FlowList>
-                        <MainButton>No</MainButton>
-                        <MainButton>Yes</MainButton>
-                    </FlowList>
-                </DialogBottomBar>
-            </DialogLayout>
-        </Dim>
-    ),
-};
-
-export const FullscreenDialog: StoryObj = {
-    render: () => (
-        <Dim>
-            <DialogLayout isModal={true}>
-                <DialogTopBar>
-                    <DialogTopBarLeft />
-                    <DialogTopBarCenter>
-                        <MainTitle>Dialog Title</MainTitle>
-                    </DialogTopBarCenter>
+        return (
+            <TransitioningDim ref={ref}>
+                <DialogLayout isPacked={true}>
                     <DialogTopBar>
-                        <MainButton>Close</MainButton>
+                        <DialogTopBarCenter>
+                            <MainTitle>Packed Dialog</MainTitle>
+                        </DialogTopBarCenter>
                     </DialogTopBar>
-                </DialogTopBar>
 
-                <DialogContent>
-                    <SmallLabel>Some message</SmallLabel>
-                </DialogContent>
+                    <DialogContent>
+                        <SmallLabel>Some message</SmallLabel>
+                    </DialogContent>
 
-                <DialogBottomBar>
-                    <FlowList>
-                        <MainButton>No</MainButton>
-                        <MainButton>Yes</MainButton>
-                    </FlowList>
-                </DialogBottomBar>
-            </DialogLayout>
-        </Dim>
-    ),
+                    <DialogBottomBar>
+                        <FlowList>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                No
+                            </MainButton>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                Yes
+                            </MainButton>
+                        </FlowList>
+                    </DialogBottomBar>
+                </DialogLayout>
+            </TransitioningDim>
+        );
+    },
 };
 
 export const UnpackedDialog: StoryObj = {
-    render: () => (
-        <Dim>
-            <DialogLayout isPacked={false}>
-                <DialogTopBar>
-                    <DialogTopBarCenter>
-                        <MainTitle>Dialog Title</MainTitle>
-                    </DialogTopBarCenter>
-                </DialogTopBar>
+    render: () => {
+        const ref = useRef<TransitioningDim>(null);
 
-                <DialogContent>
-                    <SmallLabel>Some message</SmallLabel>
-                </DialogContent>
+        return (
+            <TransitioningDim ref={ref}>
+                <DialogLayout isPacked={false}>
+                    <DialogTopBar>
+                        <DialogTopBarCenter>
+                            <MainTitle>Unpacked Dialog</MainTitle>
+                        </DialogTopBarCenter>
+                    </DialogTopBar>
 
-                <DialogBottomBar>
-                    <FlowList>
-                        <MainButton>No</MainButton>
-                        <MainButton>Yes</MainButton>
-                    </FlowList>
-                </DialogBottomBar>
-            </DialogLayout>
-        </Dim>
-    ),
+                    <DialogContent>
+                        <SmallLabel>Some message</SmallLabel>
+                    </DialogContent>
+
+                    <DialogBottomBar>
+                        <FlowList>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                No
+                            </MainButton>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                Yes
+                            </MainButton>
+                        </FlowList>
+                    </DialogBottomBar>
+                </DialogLayout>
+            </TransitioningDim>
+        );
+    },
+};
+
+export const FullscreenDialog: StoryObj = {
+    render: () => {
+        const ref = useRef<TransitioningDim>(null);
+
+        return (
+            <TransitioningDim ref={ref}>
+                <DialogLayout isModal={true}>
+                    <DialogTopBar>
+                        <DialogTopBarLeft />
+                        <DialogTopBarCenter>
+                            <MainTitle>Fullscreen Dialog</MainTitle>
+                        </DialogTopBarCenter>
+                        <DialogTopBar>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                Close
+                            </MainButton>
+                        </DialogTopBar>
+                    </DialogTopBar>
+
+                    <DialogContent>
+                        <SmallLabel>Some message</SmallLabel>
+                    </DialogContent>
+
+                    <DialogBottomBar>
+                        <FlowList>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                No
+                            </MainButton>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                Yes
+                            </MainButton>
+                        </FlowList>
+                    </DialogBottomBar>
+                </DialogLayout>
+            </TransitioningDim>
+        );
+    },
+};
+
+export const PromptDialog: StoryObj = {
+    render: () => {
+        const ref = useRef<TransitioningDim>(null);
+
+        return (
+            <TransitioningDim ref={ref}>
+                <DialogLayout isPacked={true}>
+                    <DialogTopBar>
+                        <DialogTopBarCenter>
+                            <MainTitle>Prompt Dialog</MainTitle>
+                        </DialogTopBarCenter>
+                    </DialogTopBar>
+
+                    <DialogContent>
+                        <input type="text" />
+                    </DialogContent>
+
+                    <DialogBottomBar>
+                        <FlowList>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                No
+                            </MainButton>
+                            <MainButton
+                                onClick={() => ref.current?.animateOut()}
+                            >
+                                Yes
+                            </MainButton>
+                        </FlowList>
+                    </DialogBottomBar>
+                </DialogLayout>
+            </TransitioningDim>
+        );
+    },
 };

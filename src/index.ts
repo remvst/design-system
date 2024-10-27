@@ -7,6 +7,7 @@ export * from "./balanced-stack/balanced-stack";
 export * from "./buttons/buttons";
 export * from "./dialog-layout/dialog-layout";
 export * from "./dim/dim";
+export * from "./dim/transitioning-dim";
 export * from "./flow-list/flow-list";
 export * from "./focusable";
 export * from "./frame/frame";
