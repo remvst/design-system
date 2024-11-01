@@ -1,10 +1,7 @@
 import {
     AlignRight,
-    Dim,
     FlowList,
-    Frame,
     Gauge,
-    HorizontalCenter,
     MainButton,
     MainTitle,
     ScreenStackLayout,
